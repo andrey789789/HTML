@@ -66,8 +66,128 @@ letter-spacing: 0.68px;
     margin-right: 13px;
 }
 
-.cart {
+.cart_but {
     margin-right: 26px;
+    border: none;
+    background-color: white;
+}
+
+.cart_box{
+    position: absolute;
+  display: none;
+width: 262px;
+height: 440px;
+border-radius: 5px;
+background-color: white;
+text-align: center;
+margin-top: 15px;
+margin-left: -20px;
+border: 1px solid #ececec;
+}
+
+.cart_box:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 29px;
+    top: -8px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+.cart_content:hover .cart_box {
+   display: block;
+}
+
+.cart1{
+    display: flex;
+    width: 230px;
+    margin-top: 21px;
+    margin-left: 17px;
+    padding-bottom: 16px;
+
+}
+.cart_text{
+
+color: #222222;
+font-family: Lato;
+font-size: 12px;
+font-weight: 700;
+text-transform: uppercase;
+
+}
+.cart_price{
+
+color: #f16d7f;
+font-family: Lato;
+font-size: 12px;
+font-weight: 400;
+text-transform: uppercase;
+margin-top: 10px;
+}
+
+.cart_column{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.total_price{
+    margin-top: 10px;
+    width: 230px;
+    text-align: center;
+    padding-left: 18px;
+    padding-bottom: 30px;
+}
+.total{
+color: #222222;
+font-family: Lato;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+float: left;
+}
+.price{
+color: #222222;
+font-family: Lato;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+float: right;
+}
+
+.checkout_but{
+    width: 225px;
+    height: 50px;
+    border: 1px solid #f16d7f;
+    background-color: white;
+color: #f16d7f;
+font-family: Lato;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+
+}
+
+.to_cart_but{
+    width: 225px;
+    height: 50px;
+     background-color: white;
+color: #4a4a4a;
+font-family: Lato;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+border: 1px solid #eaeaea;
+margin-top: 10px;
+
+}
+
+.del_but{
+    margin-top: 35px;
+    margin-left: 55px;
 }
 
 .menu {
@@ -123,6 +243,7 @@ letter-spacing: 0.68px;
 
 
 
+
 .nav {
     background-color: #fff;
 }
@@ -166,8 +287,6 @@ letter-spacing: 0.35px;
 }
 
 
-
-
 .promo {
     background-color: #e8e8e8;
 }
@@ -204,10 +323,6 @@ letter-spacing: 0.35px;
 }
 
 .promo__h2 {
-
-
-
-
     font-size: 60px;
 
     line-height: 1.2;
@@ -483,6 +598,18 @@ color: #ffffff;
 }
 
 .block3_1part:hover, .block3_2part:hover , .block3_3part:hover, .block3_4part:hover, .block3_5part:hover, .block3_6part:hover, .block3_7part:hover, .block3_8part:hover .img_b {
+    filter: brightness(50%);
+}
+
+.product:hover .product__add {
+    display: block;
+}
+
+.product:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product:hover .product__img {
     filter: brightness(50%);
 }
 
@@ -931,7 +1058,6 @@ font-weight: 700;
     background-image: url(img/categ_bckgr.svg);
    background-repeat: no-repeat;
     background-position: left;
-    padding-left: 10px;
 }
 .category_link{
   display: block;
@@ -1145,16 +1271,14 @@ font-weight: 700;
 text-transform: uppercase;
 }
 .paggination_product{
-    width: 260px;
-    height: 44px;
+    padding-top: 64px;
+
 }
 
 #pag_list {
     display: flex;
     list-style: none;
     width: 261px;
-     justify-content: space-between;
-    padding-top: 10px;
 }
 
 #pag_list li{
@@ -1164,104 +1288,221 @@ font-family: Lato;
 font-size: 16px;
 font-weight: bold;
 line-height: 26px;
-   
+
 }
-.active_list{
+.active_list li{
 
 color: #ef5b70;
 }
 
 #pag_list a {
-    
+    color: black;
     float: left;
-    color: #c4c4c4;
-font-family: Lato;
-font-size: 16px;
-font-weight: bold;
-line-height: 26px;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
 
-button.view_button {
-    width: 150px;
-    height: 44px;
-border-radius: 3px;
-border: 1px solid #ef5b70;
-background-color: #ffffff;
-
-color: #ef5b70;
-font-family: Lato;
-font-size: 16px;
-font-weight: bold;
-line-height: 26px;
-margin-left: 450px;
-    } 
-    button.view_button:hover { 
-    background: #FF6347; 
-    }
-    .controle{
-        margin-top: 64px;
-        display: flex;
-    }
 
 
-.company_descript {
-    margin-top: 110px;
-    height: 341px;
-background-color: #222224;
-    display: flex;
-    justify-content: space-around;
-}
 
-#text_deliv {
-   padding-top: 30px;
-    padding-bottom: 17px;
-
-color: #fbfbfb;
-font-family: Lato;
-font-size: 20px;
-font-weight: 700;
-letter-spacing: 0.5px;
-}
-
-#deliv_descr {
+.dropbtn {
    
-width: 310px;
-color: #fbfbfb;
-font-family: Lato;
-font-size: 14px;
-font-weight: 300;
-line-height: 23.95px;
-letter-spacing: 0.35px;
-}
-
-.descript_part {
-    width: 310px;
-    text-align: center;
-    padding-top: 90px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.super_sale {
-    background-image: url(img/super_sale.jpg);
-    width: 255px;
-    height: 118px;
+  width: 87px;
+  height: 38px;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #e6e6e6;
   
 }
 
-#super_text {
-   
-
-color: #ffffff;
-font-family: "Lato - Black";
-font-size: 22px;
-font-weight: 400;
-line-height: 28px;
-text-transform: uppercase;
-
-letter-spacing: 0.55px;
-    padding-left: 174px;
-    padding-top: 60px;
+.dropbtn:hover{
+    background-color: #cdcdcc;
 }
+
+.browse_dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 96px;
+  height: 234px;
+    background-color: white;
+}
+
+
+.dropdown-content a {
+   color: #232323;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+
+.browse_dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+}
+.single_details{
+    width: 1140px;
+     text-align: center;
+ 
+border: 1px solid #eaeaea;
+    margin-top: -86px;
+    background-color: #fff;
+
+}
+.single_collection{
+    width: 150px;
+  margin: 0 auto;
+}
+#collection_type{
+   border-bottom: 1px solid #eaeaea;
+color: #f16d7f;
+font-family: Lato;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+padding-top: 73px;
+padding-bottom: 18px;
+margin-bottom: -2px;
+}
+
+#single_rect{
+    margin: 0 auto;
+    display: block;
+}
+#single_pic{
+    display: block;
+    margin: 0 auto;
+}
+.moschino{
+color: #4d4d4d;
+font-family: "Lato - Black";
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+text-transform: uppercase;
+padding-top: 17px;
+}
+.moschino_desc{
+width: 618px;
+color: #5e5e5e;
+font-family: Lato;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+padding-top: 67px;
+margin: 0 auto;
+}
+.mosch_add_desc{
+    padding-top: 28px;
+   display: flex;
+   justify-content: center; 
+font-family: Lato;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+color: #2f2f2f;
+}
+.material_color{
+
+color: #b9b9b9;
+}
+#mosch_designer{
+    margin-left: 44px;
+}
+.mosch_price{
+    padding-top: 27px;
+color: #ef5b70;
+font-family: Lato;
+font-size: 24px;
+font-weight: 700;
+line-height: 24px;
+}
+.color_details{
+    border: 1px solid #eaeaea;
+    width: 144px;
+}
+
+.choosing_form{
+    width: 620px;
+    border: 1px solid #eaeaea;
+    border-left: none;
+  border-right: none;
+  border-bottom: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#item_color{
+    width: 144px;
+    height: 35px;
+}
+#item_color{
+    display: block;
+  
+}
+.choosing_field{
+    border: none;
+    text-align: left;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 63px;
+}
+.quan{
+    box-sizing: border-box;
+}
+
+.add_product{
+    margin-top: 28px;
+}
+
+.to_card_bot{
+
+width: 537px;
+height: 55px;
+border: 1px solid #ef5b70;
+background-color: #ffffff;
+ background-image: url(img/cart.svg);
+ background-repeat: no-repeat;
+ background-position:  right 315px bottom 15px;
+color: #ef5b70;
+font-family: Lato;
+font-size: 16px;
+font-weight: 700;
+margin-bottom: 122px;
+}
+.also_like{
+    margin-top: 119px;
+    margin-bottom: 94px;
+}
+.also_name{
+color: #4d4d4d;
+font-family: "Lato - Black";
+font-size: 24px;
+font-weight: 400;
+line-height: 20px;
+text-transform: uppercase;
+text-align: center;
+ margin-bottom: 24px;
+}
+
+
+   
