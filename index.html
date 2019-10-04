@@ -10,33 +10,90 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header__content">
-            <div class="header__left">
-                <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="colortext">D</span></a>
-                <form class="header__form" action="#">
-                    <p><select class="browse_form" name="browse">
-                            <option value="r1">Browse</option>
-                        </select></p>
+  <header class="header">
+    <div class="container header__content">
+        <div class="header__left">
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span
+                    class="colortext">D</span></a>
+            <form class="header__form" action="#">
+                <div class="browse_dropdown">
+                    <button class="dropbtn">Browse <img src="img/browse.png" alt="browse"></button>
+                    <div class="dropdown-content">
+                        <div class="drop__flex">
+                            <h3 class="drop__h3">Women</h3>
+                            <ul class="drop__ul">
 
-                    <!-- <div class="browse">Browse</div>
-                    <input type="text">-->
-                    <!-- <button>0</button>-->
-                    <input class="input_name" type="text" placeholder="Search for item...">
-                    <button class="header_button"><img src="img/search.png" alt="search"></button>
-                </form>
+                                <li><a href="product.html" class="drop__link">Tops</a></li>
+                                <li><a href="product.html" class="drop__link">Sweaters/Knits</a></li>
+                                <li><a href="product.html" class="drop__link">Jackets/Coats</a></li>
+                                <li><a href="product.html" class="drop__link">Blazers</a></li>
+                                <li><a href="product.html" class="drop__link">Denim</a></li>
+                                <li><a href="product.html" class="drop__link">Leggings/Pants</a></li>
+                                <li><a href="product.html" class="drop__link">Skirts/Shorts</a></li>
+                                <li><a href="product.html" class="drop__link">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="drop__flex">
+                            <h3 class="drop__h3">Man</h3>
+                            <ul class="drop__ul">
+                                <li><a href="product.html" class="drop__link">Teels/Tank tops</a></li>
+                                <li><a href="product.html" class="drop__link">Shirts/Polos</a></li>
+                                <li><a href="product.html" class="drop__link">Sweaters </a></li>
+                                <li><a href="product.html" class="drop__link">Sweatshirts/Hoodies </a></li>
+                                <li><a href="product.html" class="drop__link">Blazers </a></li>
+                                <li><a href="product.html" class="drop__link">Jackets/vests </a></li>
+                            </ul>
 
-            </div>
-            <div class="header__right">
-               <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
-               <!-- <img class="cart" src="img/cart.svg" alt="cart">-->
-                <select class="button" name="Account">
-                    <option value="r1">My Account</option>
-                </select>
-                <!-- <a class="button" href="#">My Account</a>-->
-            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <input class="input_name" type="text" placeholder="Search for item...">
+                <button class="header_button"><img src="img/search.png" alt="search"></button>
+            </form>
+
         </div>
-    </header>
+        <div class="header__right">
+            <div class="cart_content">
+                <button class="cart_but"><img class="cart" src="img/cart.svg" alt="cart"></button>
+                <div class="cart_box">
+                    <div class="cart1">
+                        <div class="cartpic1"><img src="img/cartpic1.jpg" alt="cartpic"></div>
+                        <div class="cart_column">
+                            <p class="cart_text">Rebox Zane</p>
+                            <img src="img/stars.jpg" width="56px" height="12px" alt="stars">
+                            <p class="cart_price">1 x $250</p>
+                        </div>
+                        <a href="#" class="del_but"> <img src="img/del.png" width="15px" height="15px" alt="del"></a>
+                    </div>
+
+                    <div class="cart1">
+                        <div class="cartpic1"><img src="img/cartpic2.jpg" alt="cartpic"></div>
+                        <div class="cart_column">
+                            <p class="cart_text">Rebox Zane</p>
+                            <img src="img/stars.jpg" width="56px" height="12px" alt="stars">
+                            <p class="cart_price">1 x $250</p>
+                        </div>
+                        <a href="#" class="del_but"> <img src="img/del.png" width="15px" height="15px" alt="del"></a>
+                    </div>
+                    <div class="total_price">
+                        <p class="total">TOTAL</p>
+                        <p class="price">$500.00</p>
+                    </div>
+                    <button class="checkout_but">Checkout</button>
+                    <button class="to_cart_but">Go to cart</button>
+                </div>
+            </div>
+            <!-- <img class="cart" src="img/cart.svg" alt="cart">-->
+            <select class="button" name="Account">
+                <option value="r1">My Account</option>
+            </select>
+            <!-- <a class="button" href="#">My Account</a>-->
+        </div>
+    </div>
+</header>
    <nav class="nav">
         <div class="container nav__content">
             <ul class="menu">
