@@ -1,0 +1,1367 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Lato', sans-serif
+
+a
+  text-decoration: none
+
+
+.header
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  border: 1px solid #ececec
+  background-color: #ffffff
+
+.container
+  width: 1140px
+  margin: 0 auto
+
+.colortext
+  color: #f16d7f
+
+.header__content
+  height: 100px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__left,
+.header__right,
+.header__form,
+.logo
+  display: flex
+  align-items: center
+
+.browse_form
+height: 38px
+
+.input_name
+  height: 38px
+  padding-left: 16px
+  box-sizing: border-box
+
+.header_button
+  height: 38px
+  width: 36px
+
+.logo
+  color: #222222
+  font-size: 27px
+  font-weight: 300
+  text-transform: uppercase
+  margin-right: 37px
+line-height: 32px
+letter-spacing: 0.68px
+
+.logo__img
+  margin-right: 13px
+
+.cart_but
+  margin-right: 26px
+  border: none
+  background-color: white
+
+.cart_box
+  position: absolute
+  display: none
+width: 262px
+height: 440px
+border-radius: 5px
+background-color: white
+text-align: center
+margin-top: 15px
+margin-left: -20px
+border: 1px solid #ececec
+
+.cart_box:before
+  content: ''
+  width: 12px
+  height: 12px
+  background-color: #fff
+  display: block
+  position: absolute
+  left: 29px
+  top: -8px
+  transform: rotate(45deg)
+  border-top: 1px solid #e8e8e8
+  border-left: 1px solid #e8e8e8
+
+.cart_content:hover .cart_box
+  display: block
+
+.cart1
+  display: flex
+  width: 230px
+  margin-top: 21px
+  margin-left: 17px
+  padding-bottom: 16px
+
+.cart_text
+color: #222222
+font-family: Lato
+font-size: 12px
+font-weight: 700
+text-transform: uppercase
+
+.cart_price
+color: #f16d7f
+font-family: Lato
+font-size: 12px
+font-weight: 400
+text-transform: uppercase
+margin-top: 10px
+
+.cart_column
+  margin-left: 10px
+  margin-top: 10px
+
+.total_price
+  margin-top: 10px
+  width: 230px
+  text-align: center
+  padding-left: 18px
+  padding-bottom: 30px
+
+.total
+color: #222222
+font-family: Lato
+font-size: 16px
+font-weight: 700
+text-transform: uppercase
+float: left
+
+.price
+color: #222222
+font-family: Lato
+font-size: 16px
+font-weight: 700
+text-transform: uppercase
+float: right
+
+.checkout_but
+  width: 225px
+  height: 50px
+  border: 1px solid #f16d7f
+  background-color: white
+color: #f16d7f
+font-family: Lato
+font-size: 14px
+font-weight: 700
+text-transform: uppercase
+
+.to_cart_but
+  width: 225px
+  height: 50px
+    background-color: white
+color: #4a4a4a
+font-family: Lato
+font-size: 14px
+font-weight: 700
+text-transform: uppercase
+border: 1px solid #eaeaea
+margin-top: 10px
+
+.del_but
+  margin-top: 35px
+  margin-left: 55px
+
+.menu
+  list-style-type: none
+  display: flex
+  justify-content: center
+
+.menu__link
+  display: block
+  padding: 20px
+  color: #222222
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+
+.drop
+  position: absolute
+  display: none
+  border-radius: 5px
+  background-color: #ffffff
+  padding: 0 0 20px
+  border: 1px solid #ececec
+  top: 48px
+
+.drop_last
+  right: 0
+
+.drop_last:before
+  right: 50px
+  left: auto !important
+
+.drop:before
+  content: ''
+  width: 12px
+  height: 12px
+  background-color: #fff
+  display: block
+  position: absolute
+  left: 29px
+  top: -8px
+  transform: rotate(45deg)
+  border-top: 1px solid #e8e8e8
+  border-left: 1px solid #e8e8e8
+
+.nav
+  background-color: #fff
+
+.drop__link
+  color: #646464
+font-size: 14px
+font-weight: 400
+line-height: 28px
+letter-spacing: 0.35px
+
+.drop__ul
+  list-style-type: none
+
+.drop__flex
+  width: 235px
+  margin-right: 20px
+  margin-left: 20px
+
+.drop__h3
+  border-bottom: 1px solid #e8e8e8
+  color: #232323
+font-size: 14px
+font-weight: 400
+  text-transform: uppercase
+    padding-bottom: 8px
+      margin-bottom: 8px
+      margin-top: 20px
+letter-spacing: 0.35px
+
+.menu__list
+  position: relative
+
+
+.menu__list:hover .drop
+  display: flex
+
+.promo
+  background-color: #e8e8e8
+
+.promo__container
+  height: 613px
+  background-image: url(img/promo_img.jpg)
+  background-position: 0 -51px
+  padding-top: 224px
+  box-sizing: border-box
+  display: flex
+
+.button
+  width: 130px
+  height: 38px
+  background-color: #f16d7f
+  font-family: Lato
+  font-size: 15px
+  line-height: 32px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #ffffff
+  text-align: center
+  padding-left: 10px
+
+.promo_logo
+  width: 12px
+
+  height: 100px
+  margin-top: 15px
+  background-color: #f16d7f
+
+.promo__h2
+  font-size: 60px
+
+  line-height: 1.2
+
+  font-weight: 900
+
+  letter-spacing: 0.025em
+
+.promo__h3
+
+  font-size: 40px
+
+  line-height: 1.2
+
+  font-weight: 900
+
+.promo__text
+  height: 100px
+
+.block2__content
+  height: 820px
+  width: 1140px
+  margin-top: 100px
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: space-between
+
+.bl2_part1
+  background-image: url(img/bl2_pic1.jpg)
+  width: 560px
+  height: 542px
+
+.bl2_part2
+  background-image: url(img/bl2_pic2.jpg)
+  width: 560px
+  height: 261px
+  background-repeat: no-repeat
+  background-position: right
+
+.bl2_part3
+  background-image: url(img/bl2_pic3.jpg)
+  width: 560px
+  height: 261px
+
+.bl2_part4
+  background-image: url(img/bl2_pic4.jpg)
+  width: 560px
+  height: 542px
+
+.bl2_part1_text
+  width: 175px
+  height: 82px
+  background-color: #ffffff
+  margin-top: 26px
+
+.bl2_part2_text
+  width: 225px
+  height: 82px
+  background-color: #ffffff
+  margin-top: 26px
+
+.bl2_part3_text
+  width: 162px
+  height: 82px
+  background-color: #ffffff
+  margin-top: 26px
+
+.bl2_part4_text
+  width: 162px
+  height: 82px
+  background-color: #ffffff
+  margin-top: 26px
+
+.bl2t1__h3
+  padding-top: 16px
+  padding-left: 19px
+
+.bl2t1__h2
+  padding-left: 19px
+
+.block3
+  margin-top: 100px
+
+.bl3__name_h3
+
+  height: 23px
+  color: #222222
+  font-family: Lato
+  font-size: 30px
+  font-weight: 700
+  line-height: 54px
+
+.bl3__name_h4
+  margin-top: 16px
+  font-family: Lato
+  font-size: 14px
+  line-height: 54px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #9f9f9f
+
+.bl2t1__h3
+  padding-top: 16px
+  padding-left: 18px
+
+.block3_name
+  text-align: center
+
+.block3__content
+  margin-top: 60px
+    display: flex
+
+  flex-wrap: wrap
+  justify-content: space-around
+
+.unit_description
+  width: 157px
+  height: 11px
+  color: #222222
+  font-family: Lato
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+  padding-left: 14px
+
+.unit_price
+  width: 50px
+  height: 15px
+  color: #f16d7f
+  font-family: Lato
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  padding-left: 14px
+  padding-top: 16px
+
+.block3_1part
+  height: 364px
+  width: 263px
+
+.all_product
+  margin-top: 80px
+  width: 212px
+  height: 48px
+  background-color: #f16d7f
+
+
+.browse_text
+height: 11px
+color: #ffffff
+font-family: Lato
+font-size: 16px
+font-weight: 700
+line-height: 54px
+letter-spacing: 0.4px
+padding-left: 24px
+
+.go_link
+  padding-left: 185px
+
+.woman_sale
+  background-image: url(img/women_sale.jpg)
+  height: 529px
+  width: 767px
+    background-repeat: no-repeat
+
+.block4
+  margin-top: 113px
+
+.bl4_pt1_text
+  padding-top: 146px
+  margin-left: 39px
+
+.bl4_p1_h2
+  font-family: Lato
+font-size: 53.7px
+line-height: 1.2
+font-weight: 700
+letter-spacing: 0.025em
+color: #ffffff
+
+.bl4_p1_h3
+  font-size: 32px
+  letter-spacing: 0.9px
+    font-family: Lato
+
+line-height: 1.2
+font-weight: 700
+
+color: #ffffff
+
+.block3_group1
+  display: flex
+
+.block3_group2
+  display: flex
+
+.block3_1part,
+.block3_2part,
+.block3_3part
+  margin-right: 32px
+
+.block3_5part,
+.block3_6part,
+.block3_7part
+  margin-right: 32px
+
+
+
+
+.product:hover .product__add
+  display: block
+
+
+.product:hover
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+
+.product:hover .product__img
+  filter: brightness(50%)
+
+
+.product__add
+  color: #ffffff
+  font-size: 13px
+  font-weight: 700
+  width: 123px
+  height: 39px
+  line-height: 39px
+  display: none
+  border: 1px solid #ffffff
+  position: absolute
+  top: 98px
+  left: 70px
+  text-align: center
+
+
+.product__add:hover
+  box-shadow: 0 0 5px #fff
+
+
+.block4_2pt
+  background-color: #222224
+  width: 373px
+  height: 528px
+/*align-items: center*/
+
+
+.block4__content
+  display: flex
+
+
+.bl4_pt2_h4
+
+padding-left: 30px
+height: 20px
+color: #fbfbfb
+font-family: Lato
+font-size: 20px
+font-weight: 700
+letter-spacing: 0.5px
+
+
+.bl4_pt2_h5
+  width: 220px
+  padding-left: 30px
+height: 58px
+color: #fbfbfb
+font-family: Lato
+font-size: 14px
+font-weight: 300
+line-height: 24px
+letter-spacing: 0.35px
+
+
+.block4_pt2_group1,
+.block4_pt2_group2,
+.block4_pt2_group3
+  display: flex
+  margin-left: 36px
+  margin-top: 54px
+
+
+.bl4_2pt_descr1
+
+
+.block_5
+  margin-top: 97px
+
+  height: 438px
+
+
+.block5_contant
+  display: flex
+  background-image: url(img/bl5_bckgr.jpg)
+  width: 1618px
+height: 438px
+
+
+.block5_story
+  display: flex
+  padding-left: 240px
+  padding-top: 111px
+  width: 386px
+
+
+.story_h5
+  width: 386px
+height: 68px
+color: #222224
+font-family: Lato
+font-size: 16px
+font-style: italic
+line-height: 26px
+letter-spacing: 0.4px
+
+
+.story_h6
+  padding-top: 19px
+width: 82px
+height: 27px
+
+font-family: Lato
+font-size: 16px
+font-weight: 700
+
+
+.story_text
+  padding-top: 12px
+  padding-left: 28px
+
+
+.circle
+  width: 38px
+  height: 4px
+  background-color: #d6d6d6
+  display: inline-block
+
+
+.circle:hover
+  background-color: #f16d7f
+
+
+.circle_active
+  width: 38px
+  height: 4px
+  background-color: #f16d7f
+  margin-bottom: 0
+  margin-left: 13px
+  margin-right: 13px
+
+
+.pagination
+  padding-top: 40px
+  width: 1170px
+  bottom: 19px
+
+
+.subscribe_form
+
+
+.block5_subscribe
+  padding-top: 111px
+  padding-left: 165px
+
+
+.subscribe_h4
+
+height: 41px
+color: #222224
+font-family: Lato
+font-size: 14px
+font-weight: 400
+font-size: 24px
+letter-spacing: 0.6px
+line-height: 54px
+text-transform: uppercase
+
+
+.subscribe_h3
+
+letter-spacing: 0.35px
+line-height: 24px
+
+height: 41px
+color: #222224
+font-family: Lato
+font-size: 14px
+
+text-transform: uppercase
+
+
+.form1
+
+  border-radius: 23px 0 0 23px
+  width: 386px
+  height: 46px
+  opacity: 0.67
+    font-family: Lato
+font-size: 14px
+font-weight: 400
+  line-height: 54px
+    letter-spacing: 0.35px
+      text-decoration-color: red
+      padding-left: 28px
+
+
+.form
+  display: flex
+
+
+.submit_form
+  height:50px
+  width: 104px
+  border-radius: 0 23px 23px 0
+background-color: #f16d7f
+
+
+.subscribe_text
+  padding-bottom: 35px
+    text-align: center
+
+
+.brand_text
+  padding-top: 29px
+width: 427px
+height: 180px
+color: #898989
+font-family: Lato
+font-size: 14px
+font-weight: 300
+line-height: 24px
+letter-spacing: 0.35px
+
+
+.block_6__content
+  padding-top: 109px
+  display: flex
+  width: 1618px
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.brand_description
+
+
+.block6_company
+
+  padding-left: 64px
+
+
+.column_name
+  padding-bottom: 45px
+  display: block
+
+height: 14px
+color: #f16d7f
+font-family: Lato
+font-size: 18px
+font-weight: 700
+line-height: 26px
+text-transform: uppercase
+letter-spacing: 0.45px
+
+
+.link_company
+  display: block
+color: #898989
+font-family: Lato
+font-size: 16px
+font-weight: 400
+letter-spacing: 0.4px
+line-height: 45px
+
+
+.block6_information
+  padding-left: 129px
+
+
+.block6_shop_category
+  padding-left: 80px
+
+
+footer
+  height: 79px
+    background-color: #e6e6e6
+
+
+.footer_content
+  width: 1618px
+  display: flex
+    align-items: center
+    justify-content: center
+
+
+.rights_text
+display: block
+height: 14px
+color: #7a7a7a
+font-family: Lato
+font-size: 16px
+font-weight: 400
+line-height: 42px
+letter-spacing: 0.4px
+
+
+.social_links
+  display: flex
+  padding-left: 690px
+  padding-top: 24px
+
+
+.fa
+color: #111
+color: #ffffff
+
+
+padding-right: 8px
+padding-left: 8px
+
+.fa:hover
+  color: #f16d7f
+
+
+.product_global_cat
+  height: 148px
+
+
+.global_cat_left
+  padding-top: 70px
+
+
+.global_cat_menu
+  list-style-type: none
+  display: flex
+  justify-content: center
+  padding-top: 70px
+  padding-left: 770px
+
+
+.prod_name
+  display: none
+width: 176px
+height: 18px
+color: #f16d7f
+font-family: "Lato - Black"
+font-size: 24px
+font-weight: 400
+  line-height: 20px
+    text-transform: uppercase
+      padding-left: 154px
+
+
+.prod_name_man
+  display: none
+  width: 176px
+height: 18px
+color: #f16d7f
+font-family: "Lato - Black"
+font-size: 24px
+font-weight: 400
+  line-height: 20px
+    text-transform: uppercase
+      padding-left: 154px
+
+
+.prod_name_new
+  width: 176px
+height: 18px
+color: #f16d7f
+font-family: "Lato - Black"
+font-size: 24px
+font-weight: 400
+  line-height: 20px
+    text-transform: uppercase
+      padding-left: 154px
+
+
+.glob_product
+  padding-top: 65px
+
+color: #f16d7f
+font-family: "Lato - Black"
+font-size: 24px
+font-weight: 400
+line-height: 20px
+text-transform: uppercase
+
+
+.product_home
+
+color: #f16d7f
+font-family: Lato
+font-size: 14px
+font-weight: 700
+line-height: 20px
+text-transform: uppercase
+color: #636363
+font-family: "Lato Light"
+font-weight: 300
+
+
+.product_man
+
+color: #f16d7f
+font-family: Lato
+font-size: 14px
+font-weight: 700
+line-height: 20px
+text-transform: uppercase
+color: #636363
+font-family: "Lato Light"
+font-weight: 300
+
+
+.product_new
+
+color: #f16d7f
+font-family: Lato
+font-size: 14px
+font-weight: 700
+line-height: 20px
+text-transform: uppercase
+color: #f16d7f
+font-family: "Lato - Bold"
+font-weight: 700
+
+
+.product_global_cat__content
+  display: flex
+
+
+.category_but
+/* width: 245px
+ height: 37px*/
+ padding-top: 12px
+ padding-bottom: 12px
+ padding-left: 28px
+     padding-right: 137px
+
+
+.product_content
+  width: 850px
+
+
+.menu_category
+  list-style-type: none
+  background-image: url(img/categ_bckgr.svg)
+  background-repeat: no-repeat
+    background-position: left
+
+.category_link
+  display: block
+text-decoration: none
+
+color: #6f6e6e
+font-family: Lato
+font-size: 14px
+font-weight: 400
+line-height: 33px
+
+
+.category_list
+  display:flex
+  width: 300px
+  position: relative
+color: #6f6e6e
+font-family: Lato
+font-size: 14px
+font-weight: 700
+line-height: 20px
+text-transform: uppercase
+
+
+summary::-webkit-details-marker
+  position: absolute
+  padding-left: 137px
+  padding-top: 6px
+
+
+/*summary:visited 
+    color: #f16d7f
+
+* /
+
+[open].summary
+  color: #f16d7f
+
+
+.trending_field
+
+  display: flex
+  flex-wrap: wrap
+    justify-content: space-around
+
+color: #6f6e6e
+font-family: Lato
+font-size: 14px
+font-weight: 700
+line-height: 20px
+text-transform: uppercase
+
+
+.main_block__content
+  display: flex
+
+
+.trending_href
+
+color: #6f6e6e
+font-family: Lato
+font-size: 14px
+font-weight: 400
+line-height: 26px
+
+
+.product_form
+  border: none
+  display: flex
+
+.fieldset_1
+  border: none
+width: 176px
+padding-right: 115px
+
+.sizes
+  border: none
+
+  width: 235px
+    flex-wrap: wrap
+      justify-content: space-around
+      padding-right: 58px
+
+
+.size_text
+
+width: 300px
+color: #6f6e6e
+font-family: "Open Sans"
+font-size: 14px
+font-weight: 400
+line-height: 20px
+text-transform: uppercase
+padding-right: 35px
+
+#XXS
+  padding-left: 56px
+
+
+details[open]
+  color: #6f6e6e
+
+.price_range
+  width: 262px
+  border: none
+
+.range_min_max
+  display: flex
+  justify-content: space-between
+
+#range_min
+  float: left
+
+#range_max
+  float: right
+
+
+input[type=range]
+
+width: 262px
+
+.sorting
+  height: 50px
+background-color: #f3f3f3
+margin-top: 40px
+
+.sorting_form
+  border: none
+  padding-top: 10px
+  padding-left: 10px
+  display: flex
+
+#sort_text
+  display: inline-block
+color: #6f6e6e
+font-family: Lato
+font-size: 14px
+font-weight: 400
+line-height: 26px
+padding: 0px 10px 0px 10px
+
+.sorting_fieldset
+  border: none
+  background-color: white
+  width: 149px
+  height: 26px
+  margin-right: 10px
+
+#sort_by
+  height: 100%
+  border-top: none
+  border-bottom: none
+  border-right: none
+color: #6f6e6e
+font-family: Lato
+font-size: 14px
+font-weight: 400
+line-height: 26px
+width: 80px
+
+
+.show_fieldset
+  border: none
+  background-color: white
+  width: 116px
+  height: 26px
+
+
+#show
+  height: 100%
+  border-top: none
+  border-bottom: none
+  border-right: none
+color: #6f6e6e
+font-family: Lato
+font-size: 14px
+font-weight: 400
+line-height: 26px
+width: 58px
+
+.product_box
+  padding-top: 48px
+  display: flex
+flex-wrap: wrap
+justify-content: space-between
+
+.product
+  width: 263px
+  position: relative
+  margin-bottom: 39px
+
+
+.product__img
+  background-color: #e9e9e9
+
+.product__name
+
+color: #6f6e6e
+font-family: Lato
+font-size: 13px
+font-weight: 400
+text-transform: uppercase
+
+.product__price
+
+color: #f16d7f
+font-family: Lato
+font-size: 16px
+font-weight: 700
+text-transform: uppercase
+
+.paggination_product
+  padding-top: 64px
+
+
+#pag_list
+  display: flex
+  list-style: none
+  width: 261px
+
+
+#pag_list li
+
+color: #c4c4c4
+font-family: Lato
+font-size: 16px
+font-weight: bold
+line-height: 26px
+
+
+.active_list li
+
+color: #ef5b70
+
+
+#pag_list a
+  color: black
+  float: left
+  padding: 8px 16px
+  text-decoration: none
+
+
+.dropbtn
+
+  width: 87px
+  height: 38px
+  border-radius: 3px 0 0 3px
+  border: 1px solid #e6e6e6
+
+
+.dropbtn:hover
+  background-color: #cdcdcc
+
+
+.browse_dropdown
+  position: relative
+  display: inline-block
+  background-color: white
+
+
+.dropdown-content
+  display: none
+  position: absolute
+  z-index: 1
+  width: 96px
+  height: 234px
+    background-color: white
+
+
+.dropdown-content a
+  color: #232323
+  font-family: Lato
+  font-size: 14px
+  font-weight: 300
+  line-height: 28px
+    text-decoration: none
+    display: block
+
+
+.browse_dropdown:hover .dropdown-content
+  display: block
+
+
+.main_content
+  display: flex
+  flex-direction: column
+
+.single_details
+  width: 1140px
+    text-align: center
+
+  border: 1px solid #eaeaea
+    margin-top: -86px
+    background-color: #fff
+
+
+.single_collection
+  width: 150px
+  margin: 0 auto
+
+#collection_type
+  border-bottom: 1px solid #eaeaea
+color: #f16d7f
+font-family: Lato
+font-size: 14px
+font-weight: 700
+line-height: 24px
+text-transform: uppercase
+padding-top: 73px
+padding-bottom: 18px
+margin-bottom: -2px
+
+
+#single_rect
+  margin: 0 auto
+  display: block
+
+#single_pic
+  display: block
+  margin: 0 auto
+
+.moschino
+color: #4d4d4d
+font-family: "Lato - Black"
+font-size: 18px
+font-weight: 400
+line-height: 24px
+text-transform: uppercase
+padding-top: 17px
+
+.moschino_desc
+width: 618px
+color: #5e5e5e
+font-family: Lato
+font-size: 14px
+font-weight: 300
+line-height: 24px
+padding-top: 67px
+margin: 0 auto
+
+.mosch_add_desc
+  padding-top: 28px
+  display: flex
+  justify-content: center
+font-family: Lato
+font-size: 14px
+font-weight: 700
+line-height: 24px
+text-transform: uppercase
+color: #2f2f2f
+
+.material_color
+
+color: #b9b9b9
+
+#mosch_designer
+  margin-left: 44px
+
+.mosch_price
+  padding-top: 27px
+color: #ef5b70
+font-family: Lato
+font-size: 24px
+font-weight: 700
+line-height: 24px
+
+.color_details
+  border: 1px solid #eaeaea
+  width: 144px
+
+
+.choosing_form
+  width: 620px
+  border: 1px solid #eaeaea
+  border-left: none
+  border-right: none
+  border-bottom: none
+    margin: 0 auto
+    display: flex
+    justify-content: center
+
+#item_color
+  width: 144px
+  height: 35px
+
+#item_color
+  display: block
+
+
+.choosing_field
+  border: none
+  text-align: left
+  margin-left: 26px
+  margin-right: 26px
+  margin-top: 63px
+
+.quan
+  box-sizing: border-box
+
+
+.add_product
+  margin-top: 28px
+
+
+.to_card_bot
+
+width: 537px
+height: 55px
+  border: 1px solid #ef5b70
+    background-color: #ffffff
+      background-image: url(img/cart.svg)
+      background-repeat: no-repeat
+      background-position: right 315px bottom 15px
+color: #ef5b70
+font-family: Lato
+font-size: 16px
+font-weight: 700
+margin-bottom: 122px
+
+.also_like
+  margin-top: 119px
+  margin-bottom: 94px
+
+.also_name
+color: #4d4d4d
+font-family: "Lato - Black"
+font-size: 24px
+font-weight: 400
+line-height: 20px
+  text-transform: uppercase
+    text-align: center
+      margin-bottom: 24px
+
+
+
+
