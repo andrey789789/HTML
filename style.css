@@ -48,6 +48,7 @@ a {
 .input_name {
     height: 38px;
     padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
 }
 
@@ -79,8 +80,8 @@ a {
 .cart_box {
     position: absolute;
     display: none;
-    width: 262px;
-    height: 440px;
+    width: 280px;
+    height: 480px;
     border-radius: 5px;
     background-color: white;
     text-align: center;
@@ -177,7 +178,13 @@ a {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
 
+}
+
+.checkout_but:hover {
+    background-color: #f16d7f;
+    color: white;
 }
 
 .to_cart_but {
@@ -191,7 +198,13 @@ a {
     text-transform: uppercase;
     border: 1px solid #eaeaea;
     margin-top: 10px;
+    cursor: pointer;
 
+}
+
+.to_cart_but:hover {
+    background-color: #4a4a4a;
+    color: white;
 }
 
 .del_but {
@@ -511,6 +524,15 @@ a {
     padding-left: 14px;
 }
 
+.unit_description:hover {
+    color: #000;
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
 .unit_price {
     width: 50px;
     height: 15px;
@@ -534,6 +556,10 @@ a {
     height: 48px;
     background-color: #f16d7f;
 
+}
+
+.all_product:hover {
+    background-color: #FF6347;
 }
 
 .browse_text {
@@ -844,6 +870,7 @@ a {
     letter-spacing: 0.35px;
     text-decoration-color: red;
     padding-left: 28px;
+    padding-right: 28px;
 
 }
 
@@ -856,9 +883,12 @@ a {
     width: 104px;
     border-radius: 0 23px 23px 0;
     background-color: #f16d7f;
+    cursor: pointer;
 }
 
-
+.submit_form:hover {
+    background-color: #eb2d47;
+}
 
 .subscribe_text {
     padding-bottom: 35px;
@@ -1717,12 +1747,22 @@ input[type=range] {
     height: 50px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
-
+    cursor: pointer;
     color: #4a4a4a;
     font-family: Lato;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    -webkit-transition: color 0.2s, background 0.3s;
+    -moz-transition: transform: color 0.2s, background 0.3s;
+    -o-transition: transform: color 0.2s, background 0.3s;
+}
+
+.cartbox_clear:hover {
+    transform: scale(1.05);
+    background-color: #A9A9A9;
+    color: #ffffff;
+
 }
 
 .cartbox__container__products_bottoms {
@@ -1767,6 +1807,8 @@ input[type=range] {
     background-color: #ffffff;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .cartbox_quote {
@@ -1780,6 +1822,13 @@ input[type=range] {
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cartbox_quote:hover {
+    border: 1px solid #696969;
+    background-color: #D3D3D3;
+    color: #FFFFF0;
 }
 
 #cartdbox__forms_discount_text {
